@@ -8,7 +8,7 @@ import joblib
 
 def c_weather_df(city='seoul'):
 
-    api_key = '07eb1f2a4e30d6c202d313e58ae4338c'
+    api_key = '' # openweathermap api key
 
     url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&lang=kr'
 
