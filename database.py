@@ -1,9 +1,9 @@
 import psycopg2
 
-host = 'chunee.db.elephantsql.com'
-user = 'yrcnwtvs'
-password = 'PNWvJPSUDXE57B51i4NGHtUzzNUqytLw'
-database = 'yrcnwtvs'
+host = ''
+user = ''
+password = ''
+database = '' # db정보
 
 def create_table():
 
