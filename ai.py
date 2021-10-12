@@ -7,10 +7,10 @@ from xgboost import XGBClassifier
 import joblib
 
 
-host = 'chunee.db.elephantsql.com'
-user = 'yrcnwtvs'
-password = 'PNWvJPSUDXE57B51i4NGHtUzzNUqytLw'
-database = 'yrcnwtvs'
+host = ''
+user = ''
+password = ''
+database = '' # db 정보
 
 target = 'selected_genre'
 
