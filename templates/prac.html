@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>ddd</title>
+        <link rel="stylesheet" href="./static/style.css">
+        
+
+    </head>
+
+        
+    <body>
+
+
+        <h1>weathertune</h1>
+
+        
+        <img  src="./static/rain.jpg" height="300" width="400" 
+            alt="이미지 누락시 속성값 화면 표시" title="마우스 대면 뜨는 문구" class = 'rain'></img>
+
+        <img  src="./static/weather.jpg" height="300" width="400" 
+            alt="이미지 누락시 속성값 화면 표시" title="마우스 대면 뜨는 문구" class = 'weather'></img>
+
+        <h2>gggg</h2>
+
+
+
+    </body>
+
+
+
+
+</html>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $("form").submit(function(){
+    $("form").attr("action", $(":text").val())});
+</script>
+
+
+<input type='submit' value='노래추천'>
+
+
+
+form {position: relative;
+    top: 100px;
+    z-index:100;
+    width: 100px;
+    height: 50px;
+    left: 350px;
+}

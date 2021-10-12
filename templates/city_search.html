@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weathertune</title>
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../static/city_search.css">
+
+    </head>
+
+    <body >
+
+        <section>
+
+            <a href="http://127.0.0.1:5000/"><h1 id='title'>Weathertune</h1></a>
+
+
+            <ul>
+                <li><a class='home' href="http://127.0.0.1:5000/">HOME</a></li>
+                <li><a class='city' href="http://127.0.0.1:5000/city_search">도시이름 검색</a></li>
+                <li><a class='map' href="http://127.0.0.1:5000/map">MAP</a></li>
+            </ul>
+            <img src='../static/image.jpg'>
+
+            <h2>도시이름 검색</h2>
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <form action='http://127.0.0.1:5000/'>
+  
+                <input id='도시이름 검색' type='text' placeholder='Search here...'>
+                <i class="fa fa-search"></i>
+        
+            </form>
+        </section>
+
+        {% if project == 0 %}
+
+            <h3>도시이름을 검색해주세요!</h3>
+
+        {% elif project != 0 %}
+
+            <table id="weather">
+
+                <tr>
+                    <th>도시 이름</th>
+                    <th>날씨</th>
+                    <th>기온</th>
+                    <th>구름량</th>
+                    <th>강수량</th>
+                    <th>추천 장르</th>
+                </tr>
+
+                <tr>
+                    <td>{{ city }}</td>
+                    <td>{{ c_weather }}</td>
+                    <td>{{ c_temp }}</td>
+                    <td>{{ c_cloud }}</td>
+                    <td>{{ c_rain }}</td>
+                    <td>{{ pred_genre }}</td>
+                </tr>
+
+                <h4>추천 노래 리스트</h4>
+
+
+            <table id="track">
+
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>아티스트</th>
+                    <th>앨범</th>
+                    <th>장르</th>
+                            
+                </tr>
+
+            {% for i in num_list %}       
+            
+    
+                <tr>
+                    <td>{{ num_list[i] + 1 }}</td>
+                    <td>{{ title_list[i] }}</td>
+                    <td>{{ artist_list[i] }}</td>
+                    <td>{{ album_list[i] }}</td>
+                    <td>{{ pred_genre }}</td>
+
+                </tr>
+
+            {% endfor %}
+
+        {% endif %}
+
+    </body>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $("form").submit(function(){
+        $("form").attr("action", $(":text").val())});
+    </script>
+
+
+    
+
+
+</html>

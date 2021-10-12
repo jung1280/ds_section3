@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weathertune</title>
+
+
+            <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+            <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/style.css">
+
+
+  </head>
+
+
+  <body>
+
+    <section> 
+      <div class="bg"></div>
+      <h1>Weathertune</h1> 
+      <p>날씨에 따라 추천 노래 리스트를 받아보세요!</p> 
+
+
+      <div class='box'>
+        <h2 class='city'>도시이름 검색</h2>
+        <h3>ex) 서울, 인천, 수원...</h3>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <form action='http://127.0.0.1:5000/city_search/'>
+  
+          <input id='도시이름 검색' type='text' placeholder='Search here...'>
+          <i class="fa fa-search"></i>
+  
+        </form>
+    
+      </div>
+
+      <div class='box2'>
+        <a href="http://127.0.0.1:5000/map"><h2 class='map'>MAP</h2></a>
+        <h3></h3>
+      
+      </div class='search'>
+
+  
+
+     
+    </section>
+
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+  $("form").submit(function(){
+    $("form").attr("action", $(":text").val())});
+  </script>
+  
+  ​
+
+
+
+</html>

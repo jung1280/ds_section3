@@ -1,0 +1,201 @@
+body{overflow:auto; width:100%; height:100%;}
+
+h1 { 
+    position: relative;
+    z-index: 100;
+    font-size: 3.0em;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bold;
+    color:#429F6B;}
+
+
+
+a {text-decoration-line: none;}
+ul {
+        position: relative;
+        z-index: 100;
+        text-align: center;
+        list-style-type: none;
+        margin: 20px;
+        margin-right: 225px;
+        margin-left: 245px;
+        margin-bottom: 0px;
+        padding: 0;
+        overflow: hidden;
+        background-color: #429F6B;
+        font-size:1em;
+      }
+      
+li{float:left;}
+    
+li a {
+        
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 14px;
+        text-decoration: none;
+      }
+      
+ 
+li a:hover {
+        background-color: #147814;
+      }
+.image {position: absolute;
+        width:1050px;
+        height:320px;
+        top:180px;
+        left:45px;
+        margin-left: 200px;
+    }
+
+
+h2 {position: relative;
+        z-index: 100;
+        text-align: center;
+        top: 380px;
+        right:380px;
+        font-size: 2.8em;
+        font-weight: bold;
+        color:#429F6B;
+    
+}
+
+.map_image{
+    position: absolute;
+        width:650px;
+        height:650px;
+        top:670px;
+        margin-left: 30px;
+
+
+}
+
+h4 {position: relative;
+    z-index: 100;
+    text-align: center;
+    top: 300px;
+    left:360px;
+    font-size: 2.8em;
+    font-weight: bold;
+    color:#429F6B;}
+
+
+#weather {
+    position: relative;
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    top: 70px;
+    left:720px;
+    text-align: center;
+}
+    
+#weather td, #weather th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+    
+#weather tr:nth-child(even){background-color: #f2f2f2;}
+    
+    
+#weather tr:hover {background-color: #ddd;}
+    
+    
+#weather th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+    }
+    
+#track {
+    position: relative;
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    top: 260px;
+    left:720px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+    
+#track td, #track th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+    
+#track tr:nth-child(even){background-color: #f2f2f2;}
+    
+    
+#track tr:hover {background-color: #ddd;}
+    
+    
+#track th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.seoul {position: relative;
+        z-index: 101;
+        top: 600px;
+        left: 270px;
+}
+
+.busan {position: relative;
+    z-index: 100;
+    top: 790px;
+    left: 490px;
+}
+
+
+.daegu{position: relative;
+    z-index: 100;
+    top: 710px;
+    left: 430px;
+}
+
+.po {position: relative;
+    z-index: 100;
+    top: 640px;
+    left: 520px;
+}
+
+.gang {position: relative;
+    z-index: 100;
+    top: 700px;
+    left: 270px;
+}
+
+.jeon {position: relative;
+    z-index: 100;
+    top: 600px;
+    left: 270px;
+}
+
+.won {position: relative;
+    z-index: 100;
+    top: 390px;
+    left: 370px;
+}
+
+
+.kang {position: relative;
+    z-index: 100;
+    top: 340px;
+    left: 450px;
+}
+
+
+.chun {position: relative;
+    z-index: 100;
+    top: 380px;
+    left: 290px;
+}
