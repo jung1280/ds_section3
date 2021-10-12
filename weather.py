@@ -3,8 +3,8 @@ import json
 from datetime import datetime, timedelta
 import pandas as pd
 
-enkey = 'fIPYKzDq5zQKFl0y6cgkUxrIAeKvCjx13wrgGUpQNkQYCRZV6gke%2BLsQakTx%2FktQRETepj%2FxvHuqHKJzoRzSvQ%3D%3D'
-dekey = 'fIPYKzDq5zQKFl0y6cgkUxrIAeKvCjx13wrgGUpQNkQYCRZV6gke+LsQakTx/ktQRETepj/xvHuqHKJzoRzSvQ=='
+enkey = ''
+dekey = '' # 기상청 api key
 
 url = 'http://apis.data.go.kr/1360000/AsosHourlyInfoService/getWthrDataList'
 
