@@ -7,10 +7,10 @@ data = pd.merge(weather_df, track_genre_df, how='inner', on='time')
 
 def collect_data(data):
 
-    host = 'chunee.db.elephantsql.com'
-    user = 'yrcnwtvs'
-    password = 'PNWvJPSUDXE57B51i4NGHtUzzNUqytLw'
-    database = 'yrcnwtvs'
+    host = ''
+    user = ''
+    password = ''
+    database = '' # db 정보
 
     conn = psycopg2.connect(host=host
                                 , user=user
