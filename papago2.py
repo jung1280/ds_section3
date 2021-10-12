@@ -5,8 +5,8 @@ import json
 
 def get_translate2(text):
 
-    client_id = "eD7mcxCLoKI7Og4K1AJ0" # 개발자센터에서 발급받은 Client ID 값
-    client_secret = "K8EGRFWDQb" # 개발자센터에서 발급받은 Client Secret 값
+    client_id = "" # 
+    client_secret = "" # 파파고 번역 api key
 
     encText = urllib.parse.quote(text)
     data = "source=ko&target=en&text=" + encText
